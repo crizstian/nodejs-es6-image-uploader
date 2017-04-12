@@ -1,0 +1,26 @@
+{
+  "name": "production",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
+    "express": "^4.15.0",
+    "express-http-proxy": "^0.11.0",
+    "helmet": "^3.4.1",
+    "http-proxy-middleware": "^0.17.4",
+    "morgan": "^1.8.1",
+    "spdy": "^3.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "standard": "^10.0.1"
+  }
+}
