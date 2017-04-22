@@ -2,7 +2,7 @@ const express = require('express')
 const morgan = require('morgan')
 const helmet = require('helmet')
 const cors = require('cors')
-const spdy = require('spdy')
+// const spdy = require('spdy')
 const path = require('path')
 const compress = require('compression')
 // const proxy = require('http-proxy-middleware')
@@ -10,7 +10,7 @@ const compress = require('compression')
 const start = (config) => {
   return new Promise((resolve, reject) => {
     const {port
-      , ssl
+      // , ssl
     } = config
 
     if (!port) {
@@ -42,10 +42,10 @@ const start = (config) => {
       res.sendFile(path.join(`${__dirname}/dist/index.html`))
     })
 
-    // const server = app.listen(port, () => resolve(server))
+    const server = app.listen(port, () => resolve(server))
 
-    const server = spdy.createServer(ssl, app)
-        .listen(port, () => resolve(server))
+    // const server = spdy.createServer(ssl, app)
+    //     .listen(port, () => resolve(server))
   })
 }
 
