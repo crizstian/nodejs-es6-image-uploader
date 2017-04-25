@@ -5,7 +5,7 @@ const cors = require('cors')
 // const spdy = require('spdy')
 const path = require('path')
 const compress = require('compression')
-// const proxy = require('http-proxy-middleware')
+const proxy = require('http-proxy-middleware')
 
 const start = (config) => {
   return new Promise((resolve, reject) => {
@@ -22,14 +22,14 @@ const start = (config) => {
     app.use(cors())
     app.use(helmet())
     app.use(compress())
-    // app.use('/api', proxy({
-    //   target: 'http://192.168.99.100:8080',
-    //   changeOrigin: true,
-    //   pathRewrite: {
-    //     '^/api': ''           // remove base path
-    //   },
-    //   logLevel: 'debug'
-    // }))
+    app.use('/api', proxy({
+      target: 'https://producmex.herokuapp.com',
+      changeOrigin: true,
+      pathRewrite: {
+        '^/api': ''
+      },
+      logLevel: 'debug'
+    }))
 
     app.use((err, req, res, next) => {
       reject(new Error('Something went wrong!, err:' + err))

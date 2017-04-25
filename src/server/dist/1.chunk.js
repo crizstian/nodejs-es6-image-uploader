@@ -6,15 +6,15 @@ webpackJsonp([1,11],{
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_components_pedidos_pedidos_module__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_components_pedidos_pedidos_module__ = __webpack_require__(301);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_widgets_widgets_module__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__panelMain_panelMain_component_ngfactory__ = __webpack_require__(308);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__panel_pedidos_panel_component_ngfactory__ = __webpack_require__(306);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__seguimiento_seguimiento_component_ngfactory__ = __webpack_require__(310);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__registrar_registrar_component_ngfactory__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_widgets_widgets_module__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__panelMain_panelMain_component_ngfactory__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__panel_pedidos_panel_component_ngfactory__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__seguimiento_seguimiento_component_ngfactory__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__registrar_registrar_component_ngfactory__ = __webpack_require__(319);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_components_pedidos_panelMain_panelMain_component__ = __webpack_require__(280);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_components_pedidos_panel_pedidos_panel_component__ = __webpack_require__(279);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__app_components_pedidos_seguimiento_seguimiento_component__ = __webpack_require__(282);
@@ -218,7 +218,7 @@ var SeguimientoPedidosComponent = (function () {
 
 /***/ }),
 
-/***/ 290:
+/***/ 300:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -230,9 +230,9 @@ var SeguimientoPedidosComponent = (function () {
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__panelMain_panelMain_component__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__registrar_registrar_component__ = __webpack_require__(281);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_3__registrar_registrar_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pedidos_routes__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pedidos_routes__ = __webpack_require__(352);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_4__pedidos_routes__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pedidos_module__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pedidos_module__ = __webpack_require__(301);
 /* unused harmony reexport PedidosModule */
 
 
@@ -244,11 +244,11 @@ var SeguimientoPedidosComponent = (function () {
 
 /***/ }),
 
-/***/ 291:
+/***/ 301:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0____ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0____ = __webpack_require__(300);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PedidosModule; });
 
 var PedidosModule = (function () {
@@ -262,7 +262,7 @@ PedidosModule.routes = __WEBPACK_IMPORTED_MODULE_0____["a" /* PedidosRoutes */];
 
 /***/ }),
 
-/***/ 292:
+/***/ 302:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -283,7 +283,7 @@ var RegistrarPedidoFormComponent = (function () {
 
 /***/ }),
 
-/***/ 293:
+/***/ 303:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -307,7 +307,7 @@ var ResumenPedidoComponent = (function () {
 
 /***/ }),
 
-/***/ 294:
+/***/ 304:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -369,11 +369,11 @@ var SeleccionarClienteFormComponent = (function () {
 
 /***/ }),
 
-/***/ 306:
+/***/ 316:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pedidos_panel_component_scss_shim_ngstyle__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pedidos_panel_component_scss_shim_ngstyle__ = __webpack_require__(317);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(16);
@@ -682,7 +682,7 @@ var PedidosPanelComponentNgFactory = __WEBPACK_IMPORTED_MODULE_1__angular_core__
 
 /***/ }),
 
-/***/ 307:
+/***/ 317:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -703,7 +703,7 @@ var PedidosPanelComponentNgFactory = __WEBPACK_IMPORTED_MODULE_1__angular_core__
 
 /***/ }),
 
-/***/ 308:
+/***/ 318:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -754,18 +754,18 @@ var PedidosMainComponentNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__[
 
 /***/ }),
 
-/***/ 309:
+/***/ 319:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__widgets_pedidos_forms_seleccion_cliente_seleccion_cliente_component_ngfactory__ = __webpack_require__(338);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_widgets_pedidos_forms_seleccion_cliente_seleccion_cliente_component__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__widgets_pedidos_forms_seleccion_cliente_seleccion_cliente_component_ngfactory__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_widgets_pedidos_forms_seleccion_cliente_seleccion_cliente_component__ = __webpack_require__(304);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__widgets_pedidos_forms_registro_pedido_registrar_pedido_component_ngfactory__ = __webpack_require__(334);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_widgets_pedidos_forms_registro_pedido_registrar_pedido_component__ = __webpack_require__(292);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__widgets_pedidos_forms_resumen_resumen_component_ngfactory__ = __webpack_require__(336);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_widgets_pedidos_forms_resumen_resumen_component__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__widgets_pedidos_forms_registro_pedido_registrar_pedido_component_ngfactory__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_widgets_pedidos_forms_registro_pedido_registrar_pedido_component__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__widgets_pedidos_forms_resumen_resumen_component_ngfactory__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_widgets_pedidos_forms_resumen_resumen_component__ = __webpack_require__(303);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_common__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_components_pedidos_registrar_registrar_component__ = __webpack_require__(281);
 /* unused harmony export RenderType_RegPedidosComponent */
@@ -924,11 +924,11 @@ var RegPedidosComponentNgFactory = __WEBPACK_IMPORTED_MODULE_0__angular_core__["
 
 /***/ }),
 
-/***/ 310:
+/***/ 320:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__seguimiento_component_scss_shim_ngstyle__ = __webpack_require__(311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__seguimiento_component_scss_shim_ngstyle__ = __webpack_require__(321);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_components_pedidos_seguimiento_seguimiento_component__ = __webpack_require__(282);
@@ -2433,7 +2433,7 @@ var SeguimientoPedidosComponentNgFactory = __WEBPACK_IMPORTED_MODULE_1__angular_
 
 /***/ }),
 
-/***/ 311:
+/***/ 321:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2454,13 +2454,13 @@ var SeguimientoPedidosComponentNgFactory = __WEBPACK_IMPORTED_MODULE_1__angular_
 
 /***/ }),
 
-/***/ 334:
+/***/ 344:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__registrar_pedido_component_scss_shim_ngstyle__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__registrar_pedido_component_scss_shim_ngstyle__ = __webpack_require__(345);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_widgets_pedidos_forms_registro_pedido_registrar_pedido_component__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_widgets_pedidos_forms_registro_pedido_registrar_pedido_component__ = __webpack_require__(302);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return RenderType_RegistrarPedidoFormComponent; });
 /* harmony export (immutable) */ __webpack_exports__["a"] = View_RegistrarPedidoFormComponent_0;
 /* unused harmony export RegistrarPedidoFormComponentNgFactory */
@@ -4086,7 +4086,7 @@ var RegistrarPedidoFormComponentNgFactory = __WEBPACK_IMPORTED_MODULE_1__angular
 
 /***/ }),
 
-/***/ 335:
+/***/ 345:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4107,14 +4107,14 @@ var RegistrarPedidoFormComponentNgFactory = __WEBPACK_IMPORTED_MODULE_1__angular
 
 /***/ }),
 
-/***/ 336:
+/***/ 346:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__resumen_component_scss_shim_ngstyle__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__resumen_component_scss_shim_ngstyle__ = __webpack_require__(347);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_widgets_pedidos_forms_resumen_resumen_component__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_widgets_pedidos_forms_resumen_resumen_component__ = __webpack_require__(303);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(12);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return RenderType_ResumenPedidoComponent; });
 /* harmony export (immutable) */ __webpack_exports__["a"] = View_ResumenPedidoComponent_0;
@@ -4700,7 +4700,7 @@ var ResumenPedidoComponentNgFactory = __WEBPACK_IMPORTED_MODULE_1__angular_core_
 
 /***/ }),
 
-/***/ 337:
+/***/ 347:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4721,15 +4721,15 @@ var ResumenPedidoComponentNgFactory = __WEBPACK_IMPORTED_MODULE_1__angular_core_
 
 /***/ }),
 
-/***/ 338:
+/***/ 348:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__seleccion_cliente_component_scss_shim_ngstyle__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__seleccion_cliente_component_scss_shim_ngstyle__ = __webpack_require__(349);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_widgets_pedidos_forms_seleccion_cliente_seleccion_cliente_component__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_widgets_pedidos_forms_seleccion_cliente_seleccion_cliente_component__ = __webpack_require__(304);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_router__ = __webpack_require__(12);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return RenderType_SeleccionarClienteFormComponent; });
 /* harmony export (immutable) */ __webpack_exports__["a"] = View_SeleccionarClienteFormComponent_0;
@@ -5158,7 +5158,7 @@ var SeleccionarClienteFormComponentNgFactory = __WEBPACK_IMPORTED_MODULE_1__angu
 
 /***/ }),
 
-/***/ 339:
+/***/ 349:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5179,12 +5179,12 @@ var SeleccionarClienteFormComponentNgFactory = __WEBPACK_IMPORTED_MODULE_1__angu
 
 /***/ }),
 
-/***/ 342:
+/***/ 352:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1____ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1____ = __webpack_require__(300);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PedidosRoutes; });
 
 
