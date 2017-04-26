@@ -331,7 +331,8 @@ var ListaClienteComponent = (function () {
     };
     ListaClienteComponent.prototype.viewDetails = function (id) {
         this.client$ = this.clientService
-            .getClient(id);
+            .getClient(id)
+            .share();
         $('#clientModal').modal('show');
     };
     ListaClienteComponent.prototype.getCiudades = function (estado) {
