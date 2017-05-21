@@ -31,6 +31,15 @@ const start = (config) => {
       logLevel: 'debug'
     }))
 
+    app.use('/thumbnail', proxy({
+      target: 'http://localhost:5500',
+      changeOrigin: true,
+      pathRewrite: {
+        '^/thumbnail': ''
+      },
+      logLevel: 'debug'
+    }))
+
     app.use((err, req, res, next) => {
       reject(new Error('Something went wrong!, err:' + err))
       res.status(500).send('Something went wrong!')
