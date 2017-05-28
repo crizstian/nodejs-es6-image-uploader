@@ -13,7 +13,7 @@ process.on('uncaughtRejection', (err, promise) => {
   console.error('Unhandled Rejection', err)
 })
 
-uploads.start()
+uploads.start(config)
   .then(app => {
     console.log('----------------------------------------------------------------------------')
     console.log(`Uploader Server started succesfully, running on port: ${app.address().port}.`)
