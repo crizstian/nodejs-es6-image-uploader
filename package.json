@@ -2,7 +2,7 @@
   "name": "production",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "uploader.js",
   "engines": {
     "node": "7.7.1"
   },

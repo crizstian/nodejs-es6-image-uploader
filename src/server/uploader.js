@@ -39,7 +39,7 @@ const start = (config) => {
 
     app.post('/thumbnail', upload.any(), (req, res) => {
       rimraf.sync(path.resolve(__dirname, '/uploads/*'))
-      const url = `https://producmex-front.herokuapp.com:${config.uplPort}/uploads/${req.files[0].filename}`
+      const url = `https://producmex-front.herokuapp.com:${config.port}/uploads/${req.files[0].filename}`
       console.log(url)
       res.status(200).json({img: url})
     })
