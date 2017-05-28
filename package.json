@@ -7,7 +7,7 @@
     "node": "7.7.1"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "start": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -23,7 +23,7 @@
     "mkdirp": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz",
     "morgan": "^1.8.1",
     "multer": "^1.3.0",
-    "nodemon": "^1.11.0",
+    "nodemon": "https://registry.npmjs.org/nodemon/-/nodemon-1.11.0.tgz",
     "rimraf": "https://registry.npmjs.org/rimraf/-/rimraf-2.6.1.tgz",
     "spdy": "^3.4.4"
   },
