@@ -1,7 +1,6 @@
 const serverSettings = {
-  port: process.env.PORT || 9000,
-  ssl: require('./ssl'),
-  uplPort: process.env.PORT2 || 5500
+  port: process.env.PORT || 5500,
+  ssl: require('./ssl')
 }
 
 module.exports = Object.assign({}, { serverSettings })

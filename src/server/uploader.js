@@ -9,6 +9,14 @@ const mkdirp = require('mkdirp')
 
 const start = (config) => {
   return new Promise((resolve, reject) => {
+    const {port
+      // , ssl
+    } = config
+
+    if (!port) {
+      reject(new Error('The server must be started with an available port'))
+    }
+
     let app = express()
 
     app.use(cors())
@@ -39,12 +47,12 @@ const start = (config) => {
 
     app.post('/thumbnail', upload.any(), (req, res) => {
       rimraf.sync(path.resolve(__dirname, '/uploads/*'))
-      const url = `https://producmex-front.herokuapp.com:${config.port}/uploads/${req.files[0].filename}`
+      const url = `https://producmex-uploader.herokuapp.com/uploads/${req.files[0].filename}`
       console.log(url)
       res.status(200).json({img: url})
     })
 
-    const server = app.listen(config.uplPort, () => resolve(server))
+    const server = app.listen(port, () => resolve(server))
   })
 }
 
