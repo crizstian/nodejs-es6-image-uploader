@@ -321,12 +321,15 @@ var LineaComponent = (function () {
         }, function () { return console.log('Line creation process ended.'); });
     };
     LineaComponent.prototype.uploadFile = function () {
-        var _this = this;
         this.uploader.uploadAll();
         this.uploader.onCompleteItem = function (item, response, status, headers) {
-            var img = JSON.parse(response).img;
-            _this.linea.logo = img;
-            _this.createLinea();
+            console.log("\nITEM => ", item);
+            console.log("\nRESPONSE => ", response);
+            console.log("\nSTATUS => ", status);
+            console.log("\nHEADERS => ", headers);
+            // const {img} = JSON.parse(response)
+            // this.linea.logo = img
+            // this.createLinea()
         };
     };
     LineaComponent.prototype.startUpload = function () {
