@@ -5,6 +5,7 @@ const multer = require('multer')
 const bodyParser = require('body-parser')
 const rimraf = require('rimraf')
 const morgan = require('morgan')
+const mkdirp = require('mkdirp')
 
 const start = () => {
   return new Promise((resolve, reject) => {
@@ -14,9 +15,13 @@ const start = () => {
     app.use(morgan('dev'))
     app.use(bodyParser.json())
 
+    const uploadPath = `${__dirname}/uploads/`
+
+    mkdirp.sync(uploadPath)
+
     let storage = multer.diskStorage({
       destination: (req, file, cb) => {
-        cb(null, `${__dirname}/uploads/`)
+        cb(null, uploadPath)
       },
       filename: (req, file, cb) => {
         let ext = path.extname(file.originalname)
@@ -34,7 +39,7 @@ const start = () => {
 
     app.post('/thumbnail', upload.any(), (req, res) => {
       rimraf.sync(path.resolve(__dirname, '/uploads/*'))
-      const url = `http://localhost:5500/uploads/${req.files[0].filename}`
+      const url = `https://producmex-front.herokuapp.com:${app.address().port}/uploads/${req.files[0].filename}`
       console.log(url)
       res.status(200).json({img: url})
     })

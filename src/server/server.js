@@ -7,7 +7,7 @@ const path = require('path')
 const compress = require('compression')
 const proxy = require('http-proxy-middleware')
 
-const start = (config) => {
+const start = (config, uploader) => {
   return new Promise((resolve, reject) => {
     const {port
       // , ssl
@@ -32,7 +32,7 @@ const start = (config) => {
     }))
 
     app.use('/thumbnail', proxy({
-      target: 'http://localhost:5500',
+      target: `https://producmex-front.herokuapp.com:${uploader.address().port}`,
       changeOrigin: true,
       pathRewrite: {
         '^/thumbnail': ''

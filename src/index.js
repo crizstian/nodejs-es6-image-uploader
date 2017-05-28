@@ -13,12 +13,16 @@ process.on('uncaughtRejection', (err, promise) => {
   console.error('Unhandled Rejection', err)
 })
 
-server.start(config)
+uploads.start()
   .then(app => {
-    console.log(`Server started succesfully, running on port: ${config.port}.`)
-    return uploads.start()
+    console.log('----------------------------------------------------------------------------')
+    console.log(`Uploader Server started succesfully, running on port: ${app.address().port}.`)
+    console.log('----------------------------------------------------------------------------')
+    return server.start(config, app)
   })
-  .then(() => console.log(`Uploader started succesfully, running on port: 5500.`))
-  .catch(err => {
-    console.log(err)
+  .then((app) => {
+    console.log('----------------------------------------------------------------------------')
+    console.log(`Server started succesfully, running on port: ${app.address().port}.`)
+    console.log('----------------------------------------------------------------------------')
   })
+  .catch(err => console.log(err))
