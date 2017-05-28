@@ -13,6 +13,11 @@ process.on('uncaughtRejection', (err, promise) => {
   console.error('Unhandled Rejection', err)
 })
 
+console.log('----------------------------------------------------------------------------')
+console.log(`ENV VARS => : SERVER: ${config.port}.`)
+console.log(`ENV VARS => : UPLOADER: ${config.uplPort}.`)
+console.log('----------------------------------------------------------------------------')
+
 uploads.start(config)
   .then(app => {
     console.log('----------------------------------------------------------------------------')
