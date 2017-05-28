@@ -14,8 +14,8 @@ process.on('uncaughtRejection', (err, promise) => {
 })
 
 console.log('----------------------------------------------------------------------------')
-console.log(`ENV VARS => : SERVER: ${config.port}.`)
-console.log(`ENV VARS => : UPLOADER: ${config.uplPort}.`)
+console.log(`ENV VARS => : SERVER: ${process.env.PORT}.`)
+console.log(`ENV VARS => : UPLOADER: ${process.env.PORT2}.`)
 console.log('----------------------------------------------------------------------------')
 
 uploads.start(config)
